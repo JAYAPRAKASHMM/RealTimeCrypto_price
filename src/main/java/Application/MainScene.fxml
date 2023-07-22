@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller">
+   <children>
+      <Button fx:id="start" layoutX="78.0" layoutY="298.0" mnemonicParsing="false" onAction="#startClicked" text="Start" />
+      <Button fx:id="stop" layoutX="176.0" layoutY="298.0" mnemonicParsing="false" onAction="#stopClicked" text="Stop" />
+      <TableView  fx:id="table" layoutX="285.0" layoutY="99.0" prefHeight="239.0" prefWidth="280.0">
+        <columns>
+          <TableColumn fx:id="noCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="210.39999999999998" text="Name" />
+        </columns>
+      </TableView>
+      <Pane layoutX="29.0" layoutY="99.0" prefHeight="158.0" prefWidth="239.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="35.0" layoutY="90.0" text="Price" textFill="#faf6f6">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="33.0" text="Name" textFill="#faf6f6">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameInput" layoutX="98.0" layoutY="36.0" prefHeight="25.0" prefWidth="115.0" />
+            <TextField  fx:id="priceDisplay" layoutX="98.0" layoutY="93.0" prefHeight="25.0" prefWidth="115.0" />
+         </children>
+      </Pane>
+      <Label layoutX="95.0" layoutY="25.0" text="Cryptocurrency Price Display" textFill="RED">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      
+   </children>
+</AnchorPane>
